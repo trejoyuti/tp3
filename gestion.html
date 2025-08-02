@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Productos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gestion.html" class="active">Gestión de Productos</a></li>
+                <li><a href="ventas.html">Registro de Ventas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Agregar/Editar Producto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="rubro">Rubro:</label>
+                <select id="rubro" name="rubro">
+                    <option value="kiosco">Kiosco</option>
+                    <option value="libreria">Librería</option>
+                    <option value="regaleria">Regalería</option>
+                </select>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" required>
+
+                <label for="stock">Stock:</label>
+                <input type="number" id="stock" name="stock" required>
+                
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Kiosco.</p>
+    </footer>
+</body>
+</html>
